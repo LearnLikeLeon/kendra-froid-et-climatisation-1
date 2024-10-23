@@ -1,0 +1,71 @@
+--> Inspirations : 
+
+    --> Technicien frigoriste : 
+
+	    Lien_1 : https://www.oriane.info/metier/technicien-frigoriste/135
+
+        Lien_2 : https://www.goafricaonline.com/annuaire/froid-climatisation
+
+
+
+-> Ta commande sur ChatGPT : 
+
+    crées un site web NextJs en utilisant les fichiers "jsx" et tailwind css pour un technicien frigoriste 
+    ou  specialiste du froid et de la climatisation en francais.
+
+
+-> ChatGPT Réponse : 
+
+Pour créer un site web avec Next.js et Tailwind CSS pour un technicien frigoriste ou un spécialiste du froid et de la 
+climatisation est un excellent projet. Voici un exemple simple de structure de fichiers et de code pour démarrer :
+
+Étape 1 : Créer le projet Next.js
+
+    1- Installer Next.js :
+
+
+        $ npx create-next-app@latest frigoriste-site
+        $ cd frigoriste-site
+
+    2- Configurer Tailwind CSS :
+
+        Modifiez le fichier " tailwind.config.js " pour inclure le chemin des fichiers JSX :
+
+
+            /** @type {import('tailwindcss').Config} */
+            module.exports = {
+            content: [
+                "./pages/**/*.{js,jsx,ts,tsx}",
+                "./components/**/*.{js,jsx,ts,tsx}",
+            ],
+            theme: {
+                extend: {},
+            },
+            plugins: [],
+            };
+
+
+
+    3- Ajouter Tailwind CSS aux styles globaux :
+
+        Dans le fichier " app/globals.css " disponible dans le dossier "app", ajoutez les lignes suivantes :
+
+            @tailwind base;
+            @tailwind components;
+            @tailwind utilities;
+
+
+
+Étape 2 : Créer des fichiers JSX
+        La Structure de répertoire de ton projet sera : 
+      
+        frigoriste-site/
+        ├── components/
+        │   ├── Header.jsx
+        │   ├── Footer.jsx
+        │   └── ServiceCard.jsx
+        ├── pages/
+        │   ├── index.jsx
+        │   └── services.jsx
+        └── styles/
+            └── globals.css
